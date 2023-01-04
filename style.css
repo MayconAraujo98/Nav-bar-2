@@ -1,0 +1,200 @@
+
+
+body {
+    font-family: 'Poppins' sans-serif;
+    margin: 1.5em;
+    background-color: rgb(228, 60, 60);
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+}
+
+ul a {
+    color: black;
+    padding: .75em 2em;
+    display: block;
+
+}
+
+ul a:hover{
+    background: rgb(231, 228, 228);
+}
+
+.close {
+    float: right;
+    margin: 2.5em;
+    width: 2.5em;
+}
+    
+    
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2em;
+    line-height: 3.3rem;
+}
+
+.subhead {
+    font-size: 1.4rem;
+}
+
+section.hero {
+    color: white;
+    height: 90vh;
+   
+}
+
+.more-info img {
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.desc {
+    line-height: 1.5rem;
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+@media only screen and (min-width: 680px) {
+
+    body {
+        font-family: 'Poppins' sans-serif;
+        margin: 1.5em 5em;
+        background-color: rgb(228, 63, 63);
+    }
+    
+}
+
+@media only screen and (min-width: 920px) {
+
+   .menu {
+    display: none;
+   }
+
+   nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+   }
+
+   svg.close {
+    display: none;
+   }
+    
+   ul {
+    display: flex;
+    margin: 0;
+
+   }
+
+   ul a {
+    color: white;
+    padding: .5em 1.5em;
+    font-size: .9rem;
+   }
+
+   ul a:hover {
+    background: none;
+    text-decoration: underline;
+   }
+
+   section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+
+   }
+
+   .feature {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+   }
+
+   .feature img {
+    width: 25em;
+   }
+
+   .content {
+    text-align: right;
+    width: 25em;
+   }
+
+   .feature.left {
+    grid-template-areas: "left right";
+
+   
+   }
+   .feature.left img {
+    grid-area: left;
+    }
+
+    .feature.left .content {
+        text-align: left;
+        width: 25em;
+        justify-self: left;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .feature {
+        gap: 0;
+    }
+}
